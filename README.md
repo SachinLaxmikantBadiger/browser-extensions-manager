@@ -11,7 +11,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 - [My Process](#my-process)
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
-  - [Continued Development](#continued-development)
+- [Continued Development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - **Solution URL:** [GitHub Repository](https://github.com/SachinLaxmikantBadiger/browser-extensions-manager)
-- **Live Site URL:** [Live Site on Vercel](https://browser-extensions-manager-sachinlaxmikantbadigers-projects.vercel.app/)
+- **Live Site URL:** [Live Site on Vercel](https://browser-extensions-git-276278-sachinlaxmikantbadigers-projects.vercel.app/)
 
 ## My Process
 

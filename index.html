@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Browser extensions manager UI</title>
 
-  <!-- Link to your JavaScript file with the 'defer' attribute -->
-  <script src="script.js" defer></script>
-</head>
-<body>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css" />
 
-  <div class="container">
-    <header class="main-header">
-      <div class="logo">
-        <!-- UPDATED: fill="currentColor" allows CSS to control the color -->
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.9998 3.33325C10.8 3.33325 3.33317 10.7999 3.33317 19.9999C3.33317 29.1999 10.8 36.6666 19.9998 36.6666C29.1998 36.6666 36.6665 29.1999 36.6665 19.9999C36.6665 10.7999 29.1998 3.33325 19.9998 3.33325ZM23.8332 23.8333C23.0498 24.6166 22.1332 25.2666 21.1165 25.7499C20.0998 26.2333 18.9998 26.5499 17.8332 26.6666L17.4998 23.4333C18.2332 23.3333 18.8998 23.0999 19.4998 22.7333C20.0998 22.3666 20.5998 21.8833 20.9998 21.2833L15.4165 15.6999L17.7665 13.3499L23.3498 18.9333C23.9498 18.5333 24.4332 18.0333 24.7998 17.4333C25.1665 16.8333 25.3998 16.1666 25.4998 15.4333L28.7332 15.7666C28.6165 16.9333 28.2998 18.0166 27.8165 19.0333C27.3332 20.0499 26.6998 20.9666 25.9165 21.7499L26.5665 22.3999C26.9665 22.0166 27.4165 21.6499 27.9165 21.3166L29.5832 23.6666C28.7665 24.2833 27.9165 24.9333 27.0498 25.5999L26.3998 24.9499L23.8332 23.8333Z"/>
-        </svg>
-        <h1>Extensions</h1>
-      </div>
-      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle color theme">☀️</button>
-    </header>
-
-    <main>
-      <div class="list-header">
-        <h2>Extensions List</h2>
-        <div id="filter-buttons" class="filter-group">
-          <button class="filter-btn active-filter" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="active">Active</button>
-          <button class="filter-btn" data-filter="inactive">Inactive</button>
+    <!-- Link to your JavaScript file with the 'defer' attribute -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <div class="logo">
+          <!-- UPDATED: fill="currentColor" allows CSS to control the color -->
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.9998 3.33325C10.8 3.33325 3.33317 10.7999 3.33317 19.9999C3.33317 29.1999 10.8 36.6666 19.9998 36.6666C29.1998 36.6666 36.6665 29.1999 36.6665 19.9999C36.6665 10.7999 29.1998 3.33325 19.9998 3.33325ZM23.8332 23.8333C23.0498 24.6166 22.1332 25.2666 21.1165 25.7499C20.0998 26.2333 18.9998 26.5499 17.8332 26.6666L17.4998 23.4333C18.2332 23.3333 18.8998 23.0999 19.4998 22.7333C20.0998 22.3666 20.5998 21.8833 20.9998 21.2833L15.4165 15.6999L17.7665 13.3499L23.3498 18.9333C23.9498 18.5333 24.4332 18.0333 24.7998 17.4333C25.1665 16.8333 25.3998 16.1666 25.4998 15.4333L28.7332 15.7666C28.6165 16.9333 28.2998 18.0166 27.8165 19.0333C27.3332 20.0499 26.6998 20.9666 25.9165 21.7499L26.5665 22.3999C26.9665 22.0166 27.4165 21.6499 27.9165 21.3166L29.5832 23.6666C28.7665 24.2833 27.9165 24.9333 27.0498 25.5999L26.3998 24.9499L23.8332 23.8333Z"
+            />
+          </svg>
+          <h1>Extensions</h1>
         </div>
-      </div>
-      
-      <div id="extensions-grid" class="extensions-grid">
-        <!-- Extension cards will be dynamically injected here by JavaScript -->
-      </div>
-    </main>
-  </div>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Sachin Laxmikant Badiger</a>.
-  </footer>
-</body>
+        <button
+          id="theme-toggle"
+          class="theme-toggle-btn"
+          aria-label="Toggle color theme"
+        >
+          ☀️
+        </button>
+      </header>
+
+      <main>
+        <div class="list-header">
+          <h2>Extensions List</h2>
+          <div id="filter-buttons" class="filter-group">
+            <button class="filter-btn active-filter" data-filter="all">
+              All
+            </button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="inactive">Inactive</button>
+          </div>
+        </div>
+
+        <div id="extensions-grid" class="extensions-grid">
+          <!-- Extension cards will be dynamically injected here by JavaScript -->
+        </div>
+      </main>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sachin Laxmikant Badiger</a>.
+    </footer>
+  </body>
 </html>

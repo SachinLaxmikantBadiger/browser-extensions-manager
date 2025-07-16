@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "AI Locator Genius",
+    "version": "1.0",
+    "description": "Uses AI to find the best CSS selector for any web element.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://localhost:3001/"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
